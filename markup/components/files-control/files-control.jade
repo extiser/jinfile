@@ -1,0 +1,19 @@
+mixin files-control(data)
+  .files-control
+    .files-control__title Файлы
+
+    form(method="" action="").files-control__buttons
+      button(type="submit").iconed-button._select Выделить все
+      button(type="submit").iconed-button._deselect Снять выделение
+      //- button(type="submit").iconed-button._download Скачать
+      button(type="submit").iconed-button._eraze Вырезать
+      button(type="submit").iconed-button._copy Копировать
+      //- button(type="submit").iconed-button._move Переместить
+      button(type="submit").iconed-button._remove Удалить
+      button(type="submit").iconed-button._share Поделиться
+      //- button(type="submit").iconed-button._more Еще
+
+    .files-control__buttons
+      a(href="#" title="").iconed-button._add-folder._single
+
+      a(href="#" title="").iconed-button._upload-coral Загрузить

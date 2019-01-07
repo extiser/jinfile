@@ -1,0 +1,111 @@
+.logined-user {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logined-user-control {
+  display: flex;
+
+  margin-right: 10px;
+
+  align-items: center;
+  justify-content: center;
+  &__item {
+    display: block;
+
+    margin: 0 10px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    @include transition;
+    &:hover {
+      opacity: .7;
+    }
+    &._faq {
+      @include bg($faq);
+    }
+    &._settings {
+      @include bg($settings);
+    }
+  }
+}
+
+.logined-user-info {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  &:hover {
+    cursor: pointer;
+    .logined-user-info-menu {
+      display: block;
+    }
+  }
+  &__avatar {
+    position: relative;
+    z-index: 70;
+    img {
+      display: block;
+
+      border-radius: 50%;
+    }
+  }
+  &__email {
+    font-size: rem-calc(14);
+
+    position: relative;
+    z-index: 70;
+
+    margin-left: 16px;
+    padding-right: 18px;
+
+    color: $white;
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+    &:after {
+      right: 0;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($down);
+    }
+  }
+}
+
+.logined-user-info-menu {
+  position: absolute;
+  top: 0;
+  left: -5%;
+
+  display: none;
+
+  box-sizing: border-box;
+  width: 110%;
+  padding-top: 72px;
+  padding-bottom: 20px;
+
+  background: $violet;
+  &__item {
+    font-family: $Medium;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 0 8px 20px;
+
+    text-decoration: none;
+
+    color: $white;
+    &:hover {
+      background: $violet + #111;
+    }
+  }
+}

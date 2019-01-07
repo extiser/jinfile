@@ -1,0 +1,15 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/auth/auth
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    main.main._inside
+      +header-main
+      +auth-service
+      +footer

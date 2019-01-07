@@ -1,0 +1,85 @@
+.bottom-baner {
+  width: 100%;
+  padding: 80px 0 64px;
+
+  background: $violet;
+  @media screen and (max-width: 960px) {
+    box-sizing: border-box;
+    padding: 40px 10px;
+  }
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__title {
+    font-family: $Light;
+    font-size: rem-calc(21);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+  &__content {
+    display: flex;
+
+    padding-top: 50px;
+
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 960px) {
+      display: block;
+
+      padding-top: 20px;
+    }
+  }
+  &__left {
+    position: relative;
+
+    width: 100%;
+    max-width: 560px;
+    padding-top: 14px;
+    padding-left: 104px;
+    @media screen and (max-width: 960px) {
+      max-width: 100%;
+      margin-bottom: 30px;
+      padding-left: 0;
+    }
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      content: "";
+
+      @include bg($time);
+    }
+  }
+  &__right {
+    img {
+      @media screen and (max-width: 960px) {
+        display: block;
+
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+  &__big {
+    font-family: $Bold;
+    font-size: rem-calc(47);
+
+    color: $coral;
+    @media screen and (max-width: 960px) {
+      font-size: rem-calc(36);
+
+      margin-bottom: 40px;
+      padding-left: 90px;
+    }
+  }
+  &__text {
+    font-size: rem-calc(16);
+    line-height: rem-calc(21);
+
+    color: $white;
+  }
+}

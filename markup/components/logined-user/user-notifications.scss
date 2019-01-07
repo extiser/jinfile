@@ -1,0 +1,17 @@
+.user-notifications {
+  position: relative;
+
+  margin: 0 10px;
+  &__icon {
+    cursor: pointer;
+
+    @include bg($note);
+    @include transition;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__list {
+    display: none;
+  }
+}

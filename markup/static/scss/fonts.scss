@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Yandex Sans Text Thin';
+    src: local('Yandex Sans Text Thin'), local('YandexSansText-Thin'),
+        url('../fonts/YandexSansText-Thin.eot'),
+        url('../fonts/YandexSansText-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YandexSansText-Thin.woff') format('woff'),
+        url('../fonts/YandexSansText-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text Bold';
+    src: local('Yandex Sans Text Bold'), local('YandexSansText-Bold'),
+        url('../fonts/YandexSansText-Bold.eot'),
+        url('../fonts/YandexSansText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YandexSansText-Bold.woff') format('woff'),
+        url('../fonts/YandexSansText-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text Medium';
+    src: local('Yandex Sans Text Medium'), local('YandexSansText-Medium'),
+        url('../fonts/YandexSansText-Medium.eot'),
+        url('../fonts/YandexSansText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YandexSansText-Medium.woff') format('woff'),
+        url('../fonts/YandexSansText-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text Light';
+    src: local('Yandex Sans Text Light'), local('YandexSansText-Light'),
+        url('YandexSansText-Light.eot'),
+        url('YandexSansText-Light.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansText-Light.woff') format('woff'),
+        url('YandexSansText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text Italic';
+    src: local('Yandex Sans Text Regular Italic'), local('YandexSansText-RegularItalic'),
+        url('YandexSansText-RegularItalic.eot'),
+        url('YandexSansText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansText-RegularItalic.woff') format('woff'),
+        url('YandexSansText-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text Regular';
+    
+    src: local('Yandex Sans Text Regular'), local('YandexSansText-Regular'),
+        url('YandexSansText-Regular.eot'),
+        url('YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansText-Regular.woff') format('woff'),
+        url('YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$Regular: 'Yandex Sans Text Regular';
+$Thin: 'Yandex Sans Text Thin';
+$Bold: 'Yandex Sans Text Bold';
+$Medium: 'Yandex Sans Text Medium';
+$Italic: 'Yandex Sans Text Italic';
+$Light: 'Yandex Sans Text Light';

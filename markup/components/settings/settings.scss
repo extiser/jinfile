@@ -1,0 +1,112 @@
+.settings {
+  padding-top: 46px;
+  padding-bottom: 14px;
+  &__title {
+    font-family: $Medium;
+    font-size: rem-calc(25);
+
+    margin-bottom: 20px;
+  }
+}
+
+.settings-control {
+  display: flex;
+
+  border-bottom: 2px solid #dadadd;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__item {
+    font-size: rem-calc(14);
+
+    display: block;
+
+    margin-right: 36px;
+    margin-bottom: -2px;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+
+    color: $gray;
+
+    @include transition;
+    &._active {
+      color: $violet;
+      border-bottom: 2px solid $violet;
+    }
+    &:hover {
+      cursor: pointer;
+
+      color: $violet;
+    }
+  }
+}
+
+.account-settings {
+  &__row {
+    display: flex;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #eff1f8;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  &__column {
+    margin-right: 80px;
+  }
+}
+
+.account-settings-field {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__label {
+    font-family: $Medium;
+    font-size: rem-calc(14);
+
+    width: 160px;
+
+    color: $gray;
+  }
+  &__input {
+    font-size: rem-calc(14);
+
+    box-sizing: border-box;
+    width: 236px;
+    height: 30px;
+    padding: 5px;
+
+    color: $gray;
+  }
+}
+
+.account-settings-avatar {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__view {
+    margin-right: 32px;
+  }
+  &__label {
+    font-family: $Medium;
+    font-size: rem-calc(14);
+
+    margin-bottom: 10px;
+
+    color: $gray;
+  }
+  .button {
+    font-size: rem-calc(14);
+
+    max-width: 160px;
+    margin-bottom: 10px;
+    padding: 8px 0;
+  }
+}

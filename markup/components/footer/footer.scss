@@ -1,0 +1,97 @@
+.footer {
+  padding: 30px 0 20px;
+
+  background: #4353a6;
+  @media screen and (max-width: 960px) {
+    padding: 30px 10px 20px;
+  }
+  &._inside {
+    padding: 16px 0;
+
+    background: #f5f5f5;
+    @media screen and (max-width: 960px) {
+      padding: 16px 10px;
+    }
+    .footer-menu {
+      &__item {
+        font-size: rem-calc(14);
+
+        color: #999;
+      }
+    }
+    .footer-social {
+      &__title {
+        font-size: rem-calc(14);
+
+        color: #999;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+    @media screen and (max-width: 960px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__logo {
+    @include bg($logo);
+  }
+  &__description {
+    font-size: rem-calc(14);
+
+    color: #999;
+  }
+}
+
+.footer-menu {
+  @media screen and (max-width: 960px) {
+    display: flex;
+
+    width: 60%;
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__item {
+    margin: 0 22px;
+
+    text-decoration: none;
+
+    color: #c4d2ff;
+    @media screen and (max-width: 960px) {
+      display: block;
+
+      width: 50%;
+      margin: 0;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  &__title {
+    margin-right: 16px;
+
+    color: rgba($white, .5);
+  }
+  &__item {
+    img {
+      display: block;
+    }
+  }
+}

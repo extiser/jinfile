@@ -1,0 +1,103 @@
+.header {
+  position: sticky;
+  z-index: 99;
+  top: 0;
+
+  width: 100%;
+  padding: 21px 0;
+
+  background: $violet;
+  @media screen and (max-width: 960px) {
+    box-sizing: border-box;
+    padding: 21px 10px;
+  }
+  &._inside {
+    .header__left {
+      width: 100%;
+      max-width: 660px;
+      @media screen and (max-width: 960px) {
+        max-width: 100%;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+
+    @include bg($logo);
+  }
+  &__left {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 960px) {
+      display: block;
+    }
+  }
+  &__slogan {
+    font-family: $Light;
+    font-size: rem-calc(16);
+
+    padding-left: 80px;
+
+    color: $white;
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+}
+
+.header-login {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 960px) {
+    padding-top: 10px;
+  }
+  &__link {
+    font-family: $Medium;
+    font-size: rem-calc(16);
+
+    display: block;
+
+    padding: 0 20px;
+
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &._enter {
+      position: relative;
+
+      color: $white;
+      &:after {
+        position: absolute;
+        right: 0;
+
+        display: block;
+
+        width: 1px;
+        height: 24px;
+
+        content: "";
+
+        background: rgba($white, .5);
+
+        @include vertical-center;
+      }
+    }
+    &._register {
+      color: $coral;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.files-tile {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.files-tile-header {
+  font-size: rem-calc(14);
+
+  display: flex;
+
+  box-sizing: border-box;
+  padding: 14px 10px;
+
+  background: #f5f5f5;
+
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.files-tile-header-sort {
+  display: flex;
+
+  padding-left: 10px;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__title {
+    margin-right: 18px;
+
+    color: #999;
+  }
+  &__item {
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    display: block;
+
+    margin-right: 28px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: $gray;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+    }
+    &._asc,
+    &._desc {
+      padding-left: 20px;
+
+      color: $violet;
+    }
+    &._asc {
+      &:before {
+        @include bg($asc);
+      }
+    }
+    &._desc {
+      &:before {
+        @include bg($desc);
+      }
+    }
+  }
+}
+
+.files-tile-body {
+  display: flex;
+
+  padding-top: 20px;
+  padding-bottom: 90px;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.files-tile-item {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 226px;
+  margin-right: 20px;
+  padding: 8px 0 14px 0;
+
+  cursor: pointer;
+
+  @include transition;
+  &._folder {
+    padding-top: 44px;
+  }
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+  &:hover {
+    background: #f5f5f5;
+
+    .files-tile-item__more {
+      visibility: visible;
+
+      opacity: 1;
+    }
+  }
+  &__meta {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 12px 0 12px;
+
+    align-items: flex-start;
+    @include transition;
+    justify-content: space-between;
+  }
+  &__more {
+    visibility: hidden;
+
+    opacity: 0;
+    a,
+    button {
+      background: $white;
+    }
+  }
+  &__image {
+    padding: 10px;
+    img {
+      display: block;
+
+      margin: auto;
+    }
+  }
+  &__title {
+    font-size: rem-calc(14);
+
+    text-align: center;
+
+    color: $gray;
+  }
+}

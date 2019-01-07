@@ -1,0 +1,41 @@
+mixin sidebar(data)
+  .sidebar__mobile Меню
+  .sidebar
+    .sidebar-menu
+      .sidebar-menu__item._files 
+        span Файлы
+        .sidebar-menu-inside
+          a(href="#" title="").sidebar-menu-inside__item._violet-folder
+            span Папка 1
+          a(href="#" title="").sidebar-menu-inside__item._coral-folder
+            span Папка 2
+          a(href="#" title="").sidebar-menu-inside__item._blue-folder
+            span Папка 3
+
+      a(href="#" title="").sidebar-menu__item._crypto
+        span Crypto Папка
+
+      a(href="#" title="").sidebar-menu__item._shared
+        span Общие
+      
+      a(href="#" title="").sidebar-menu__item._audio 
+        span Аудио
+
+      a(href="#" title="").sidebar-menu__item._images 
+        span Картинки
+
+      a(href="#" title="").sidebar-menu__item._video 
+        span Видео
+
+      a(href="#" title="").sidebar-menu__item._photo-redactor 
+        span Обработка фото
+
+      a(href="#" title="").sidebar-menu__item._trash 
+        span Корзина
+
+    .cloud
+      .cloud__title Хранилище
+      .cloud__space 10,8 GB из 2TB
+
+      .cloud__bar
+        span(style="width: 30%")

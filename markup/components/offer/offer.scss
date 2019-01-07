@@ -1,0 +1,159 @@
+.offer {
+  padding: 68px 0 80px;
+  @media screen and (max-width: 960px) {
+    padding: 40px 10px 30px;
+  }
+  &__title {
+    font-family: $Light;
+    font-size: rem-calc(21);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $violet;
+  }
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__list {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 960px) {
+      display: block;
+    }
+  }
+  &__left {
+    position: relative;
+
+    display: flex;
+
+    width: 814px;
+
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+  }
+  &__right {
+    width: 100%;
+    max-width: 384px;
+  }
+  &__image {
+    position: absolute;
+    z-index: 9;
+    right: -30px;
+
+    width: 571px;
+    height: 332px;
+
+    background: url(%=static=%assets/offer/center.png) left center no-repeat;
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+  &__test {
+    font-family: $Bold;
+    font-size: rem-calc(20);
+    line-height: rem-calc(18);
+
+    position: absolute;
+    bottom: 30px;
+    left: 260px;
+
+    padding-left: 46px;
+
+    color: $violet;
+    span {
+      font-family: $Regular;
+      font-size: rem-calc(16);
+
+      display: block;
+
+      color: $gray;
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($offer-test);
+    }
+  }
+  &__cost {
+    font-size: rem-calc(24);
+
+    padding: 30px 0 20px;
+
+    color: $gray;
+    span {
+      font-family: $Medium;
+
+      color: $coral;
+    }
+  }
+}
+
+.offer-list {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+  max-width: 350px;
+
+  &__item {
+    font-size: rem-calc(16);
+    line-height: rem-calc(26);
+
+    position: relative;
+
+    margin: 26px 0 20px;
+    padding-left: 26px;
+
+    color: $gray;
+    &:before {
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      content: "";
+
+      @include bg($offer-list);
+    }
+  }
+}
+
+.offer-plask {
+  display: flex;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 26px 34px 24px;
+
+  color: $violet;
+  background: #f6f7fb;
+
+  align-items: center;
+  justify-content: center;
+  &__left {
+    font-family: $Bold;
+    font-size: rem-calc(55);
+    line-height: 1;
+
+    padding-right: 20px;
+
+    white-space: nowrap;
+
+    border-right: 1px solid #eff1f8;
+  }
+  &__right {
+    font-size: rem-calc(25);
+    line-height: rem-calc(23);
+
+    padding-left: 20px;
+  }
+}

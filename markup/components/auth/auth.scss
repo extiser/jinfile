@@ -1,0 +1,159 @@
+.auth {
+  display: flex;
+
+  align-items: flex-start;
+  @extend .wrapper;
+  justify-content: space-between;
+  &__title {
+    font-family: $Medium;
+    font-size: rem-calc(47);
+
+    margin-bottom: 20px;
+
+    color: $violet;
+    @media screen and (max-width: 960px) {
+      font-size: rem-calc(30);
+    }
+  }
+  &__caption {
+    font-size: rem-calc(16);
+    line-height: rem-calc(28);
+
+    position: relative;
+
+    padding-left: 78px;
+
+    color: #292929;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($caption);
+    }
+  }
+  &__left {
+    width: 100%;
+    max-width: 614px;
+    @media screen and (max-width: 960px) {
+      box-sizing: border-box;
+      max-width: 100%;
+      padding: 30px 15px;
+    }
+  }
+  &__right {
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+  &__text {
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+
+    margin-top: 20px;
+
+    color: $gray;
+  }
+  &__links {
+    margin-top: 20px;
+    a {
+      margin-right: 20px;
+
+      text-decoration: none;
+
+      color: $violet;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.auth-form {
+  display: block;
+
+  margin-top: 36px;
+  padding: 62px 104px 46px 84px;
+
+  background: #f5f5f5;
+  @media screen and (max-width: 960px) {
+    padding: 20px;
+  }
+  &__error {
+    font-family: $Medium;
+    font-size: rem-calc(35);
+
+    color: #ea687a;
+    span {
+      font-size: rem-calc(20);
+
+      display: block;
+    }
+  }
+  &__caption {
+    font-size: rem-calc(14);
+    line-height: 20px;
+
+    margin-bottom: 12px;
+
+    color: $violet;
+  }
+  &__label {
+    font-family: $Medium;
+    font-size: rem-calc(20);
+
+    color: $gray;
+  }
+  &__input {
+    display: block;
+
+    box-sizing: border-box;
+    width: 326px;
+    height: 36px;
+    margin-top: 16px;
+    padding: 0 10px;
+
+    border: 1px solid #d3d4d4;
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__hint {
+    font-size: rem-calc(14);
+
+    margin-top: 16px;
+
+    color: $gray;
+  }
+  &__button {
+    font-size: rem-calc(16);
+
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 30px;
+
+    text-decoration: none;
+
+    color: $white;
+    border: 0;
+    background: $blue;
+
+    @include transition;
+    @media screen and (max-width: 960px) {
+      display: block;
+
+      box-sizing: border-box;
+      width: 100%;
+
+      text-align: center;
+    }
+    &:hover {
+      background: $blue + #111;
+    }
+  }
+}

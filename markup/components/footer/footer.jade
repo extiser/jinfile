@@ -1,0 +1,31 @@
+mixin footer(data)
+  .footer
+    .footer__wrapper
+      .footer__logo
+
+      .footer-menu
+        a(href="#" title="").footer-menu__item О нас
+        a(href="#" title="").footer-menu__item Сертификация
+        a(href="#" title="").footer-menu__item Помощь
+        a(href="#" title="").footer-menu__item Контакты
+
+      .footer-social
+        .footer-social__title Следуйте за нами
+        .footer-social__item
+          img(src="%=static=%images/assets/footer/social.jpg")
+
+mixin footer-inside(data)
+  .footer._inside
+    .footer__wrapper
+      .footer__description ©2018. Jinfile.com
+
+      .footer-menu
+        a(href="#" title="").footer-menu__item О нас
+        a(href="#" title="").footer-menu__item Сертификация
+        a(href="#" title="").footer-menu__item Помощь
+        a(href="#" title="").footer-menu__item Контакты
+
+      .footer-social
+        .footer-social__title Следуйте за нами
+        .footer-social__item
+          img(src="%=static=%images/assets/footer/social-light.jpg")

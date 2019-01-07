@@ -1,0 +1,126 @@
+mixin images-tile-scale(data)
+  .images-tile
+    .images-tile__list
+      - for (var i = 0; i < 8; i++) {
+        .images-tile-item
+          .images-tile-item__image
+            img(src="%=static=%images/assets/images-tile/image.jpg" alt="")
+          .images-tile-item__title название файла.jpg
+
+          .images-tile-change
+            .images-tile-change__item._gray 1980x1080
+            .images-tile-change__separator 
+            .images-tile-change__item._violet 1024x768
+      - };
+
+    .images-tile-sidebar
+      .images-tile-sidebar__title ПАРАМЕТРЫ ИЗМЕНЕНИЯ РАЗМЕРА
+
+      form(method="" action="")
+        .images-tile-sidebar-block
+          .images-tile-sidebar-block__title В пикселях
+
+          .images-tile-sidebar-block__label Ширина (px)
+          input(type="text" value="").images-tile-sidebar-block__field
+
+          .images-tile-sidebar-block__label Высота (px)
+          input(type="text" value="")
+
+          label.images-tile-sidebar-block__checkbox
+            input(type="checkbox")
+            span Сохранять пропорции
+
+          label.images-tile-sidebar-block__checkbox
+            input(type="checkbox")
+            span Не увеличивать, если меньше
+
+        .images-tile-sidebar-block
+          .images-tile-sidebar-block__title В процентах
+
+          .images-tile-sidebar-block__percent._first на 25% меньше
+            input(type="radio" name="percent" value="25")
+
+          .images-tile-sidebar-block__percent._active на 50% меньше
+            input(type="radio" name="percent" value="50")
+
+          .images-tile-sidebar-block__percent._end на 75% меньше
+            input(type="radio" name="percent" value="75")
+
+        .images-tile-sidebar__button
+          button(type="submit").button._blue._full Изменить размер
+
+
+mixin images-tile-zip(data)
+  .images-tile
+    .images-tile__list
+      - for (var i = 0; i < 8; i++) {
+        .images-tile-item
+          .images-tile-item__image
+            img(src="%=static=%images/assets/images-tile/image.jpg" alt="")
+          .images-tile-item__title название файла.jpg
+
+          .images-tile-change
+            .images-tile-change__item._gray 1,530 Mb
+            .images-tile-change__separator 
+            .images-tile-change__item._violet 1,023 Mb
+      - };
+
+    .images-tile-sidebar
+      .images-tile-sidebar__title ПАРАМЕТРЫ СЖАТИЯ ФОТО
+
+      .images-tile-sidebar__zip Все изображения будут сжаты с наилучшим соотношением качества и размера.
+
+      .images-tile-sidebar__button
+        button(type="submit").button._blue._full Сжать фото
+
+mixin images-tile-convert(data)
+  .images-tile
+    .images-tile__list
+      - for (var i = 0; i < 8; i++) {
+        .images-tile-item
+          .images-tile-item__image
+            img(src="%=static=%images/assets/images-tile/image.jpg" alt="")
+          .images-tile-item__title название файла.jpg
+
+          .images-tile-change
+            .images-tile-change__separator 
+            .images-tile-change__item._violet jpg
+      - };
+
+    .images-tile-sidebar
+      .images-tile-sidebar__title ПАРАМЕТРЫ КОНВЕРТИРОВАНИЯ
+
+      .images-tile-sidebar__zip Все изображения будут преобразованы в формат JPG.
+
+      .images-tile-sidebar__button
+        button(type="submit").button._blue._full Конвертировать
+
+mixin images-tile-convert-from(data)
+  .images-tile
+    .images-tile__list
+      - for (var i = 0; i < 8; i++) {
+        .images-tile-item
+          .images-tile-item__image
+            img(src="%=static=%images/assets/images-tile/image.jpg" alt="")
+          .images-tile-item__title название файла.jpg
+
+          .images-tile-change
+            .images-tile-change__separator 
+            .images-tile-change__item._violet jpg
+      - };
+
+    .images-tile-sidebar
+      .images-tile-sidebar__title ПАРАМЕТРЫ КОНВЕРТИРОВАНИЯ
+
+      .images-tile-sidebar-block
+          .images-tile-sidebar-block__percent._first Преобразовать в PNG
+            input(type="radio" name="percent" value="png")
+
+          .images-tile-sidebar-block__percent._active Преобразовать в GIF
+            input(type="radio" name="percent" value="gif")
+
+          .images-tile-sidebar-block__percent._end Преобразовать в BMP
+            input(type="radio" name="percent" value="bmp")
+
+      .images-tile-sidebar__button
+        button(type="submit").button._blue._full Конвертировать

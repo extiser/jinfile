@@ -1,0 +1,25 @@
+.files-control {
+  display: flex;
+
+  padding-top: 46px;
+
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    font-family: $Medium;
+    font-size: rem-calc(25);
+  }
+  &__buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    button,
+    a {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

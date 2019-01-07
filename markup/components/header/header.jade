@@ -1,0 +1,20 @@
+mixin header-main(data)
+  header.header
+    .header__wrapper
+      .header__left
+        a(href="#" title="").header__logo
+        .header__slogan Мы делаем защищённое хранение в облаке простым
+
+      .header-login
+        a(href="#" title="").header-login__link._enter Войти
+        a(href="#" title="").header-login__link._register Регистрация
+
+mixin header-inside(data)
+  header.header._inside
+    .header__wrapper
+      .header__left
+        a(href="#" title="").header__logo
+        +search
+
+      .header__user
+        +logined-user

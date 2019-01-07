@@ -1,0 +1,65 @@
+mixin contacts(data)
+  .contacts
+    h1 Контакты
+
+    .contacts-list
+      .contacts-list__title Главный офис
+
+      a(href="#" title="").contacts-list__item._address 74 Zugerstrasse Str, 6340 Baar, Switzerland
+      a(href="#" title="").contacts-list__item._email Email: info@jinfile.com
+      a(href="#" title="").contacts-list__item._phone  +41 43 508 59 48
+
+
+    form(method="" action="").contacts-form
+      .contacts-form__title Обратная связь
+
+      .contacts-form__layout
+        .contacts-form__row._inside
+          .contacts-form__field
+            label Ваше имя
+            input(type="text" value="")
+
+          .contacts-form__field
+            label Ваш емеил
+            input(type="email" value="")
+
+        .contacts-form__field._text
+          label Ваше сообщение:*
+          textarea(rows="6")
+
+        button(type="submit").button._blue Отправить сообщение
+
+mixin contacts-index(data)
+  .contacts-index
+    .contacts-index__layout
+      .contacts-index__left
+        h1 Контакты
+
+        .contacts-list
+          .contacts-list__title Главный офис
+
+          a(href="#" title="").contacts-list__item._address 74 Zugerstrasse Str, 6340 Baar, Switzerland
+          a(href="#" title="").contacts-list__item._email Email: info@jinfile.com
+          a(href="#" title="").contacts-list__item._phone  +41 43 508 59 48
+
+        form(method="" action="").contacts-form
+          .contacts-form__title Обратная связь
+
+          .contacts-form__layout
+            .contacts-form__row
+              .contacts-form__field
+                label Ваше имя
+                input(type="text" value="")
+
+              .contacts-form__field
+                label Ваш емеил
+                input(type="email" value="")
+
+            .contacts-form__field._text
+              label Ваше сообщение:*
+              textarea(rows="6")
+
+            button(type="submit").button._blue Отправить сообщение
+
+      .contacts-index__right
+        img(src="%=static=%images/assets/about/image.jpg" alt="")

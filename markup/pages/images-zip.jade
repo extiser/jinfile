@@ -1,0 +1,10 @@
+extend ./layout
+
+include ../components/images-control/images-control
+include ../components/images-tile/images-tile
+
+block content
+  - var data = {title: 'Сжать фото'};
+  +images-control(data)
+
+  +images-tile-zip

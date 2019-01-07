@@ -1,0 +1,313 @@
+mixin modal-join(data)
+  .modal._join
+    .modal__title._big Войти
+    .modal__close
+
+    form(method="" action="")
+      .modal-form
+        .modal-form__input
+          input(type="text" value="" placeholder="Email")
+        .modal-form__input
+          input(type="password" value="" placeholder="Пароль")
+
+        .modal-form__meta
+          .modal-form__remember
+            label
+              input(type="checkbox" value="").checkbox
+              span Запомнить меня
+
+          a(href="#" title="").modal-form__forgot Забыли пароль
+
+        button(type="submit").button._coral._full Войти
+        button(type="submit").button._blue._full Продолжить с Facebook
+
+        .modal-form__register У Вас нет аккаунта? 
+          a(href="#" title="") Регистрация
+
+
+mixin modal-register(data)
+  .modal._join
+    .modal__title._big Регистрация
+    .modal__close
+
+    form(method="" action="")
+      .modal-form
+        .modal-form__input
+          input(type="text" value="" placeholder="Email")
+        .modal-form__input
+          input(type="password" value="" placeholder="Пароль")
+        .modal-form__input
+          input(type="password" value="" placeholder="Пароль")
+
+        .modal-form__meta
+          .modal-form__remember
+            label
+              input(type="checkbox" value="").checkbox
+              span Я принимаю 
+                a(href="#" title="") Условия использования  
+                | JinFile, 
+                a(href="#" title="") Политику конфиденциальности 
+                | и 
+                a(href="#" title="") Политику интеллектуальной собственности 
+
+        button(type="submit").button._coral._full Создать аккаунт
+        button(type="submit").button._blue._full Продолжить с Facebook
+
+mixin modal-upload(data)
+  .modal._upload
+    .modal__title Загрузить файлы
+    .modal__close
+
+    form(method="" action="")
+      .upload-area
+        .upload-area__layout
+          .upload-area__icon
+          .upload-area__title Выберите или перетащите сюда файлы
+
+          .upload-area__button Выбрать на компьютере
+            input(type="file")
+
+        .upload-area__footer
+          .upload-area-select 
+            .upload-area-select__title Папка загрузки по умолчанию:
+            .select
+              select()
+                option Папка 1
+
+          .upload-area__hint Вы можете одновременно выбрать до 10 файлов
+
+mixin modal-upload-image(data)
+  .modal._upload
+    .modal__title Загрузить файлы
+    .modal__close
+
+    form(method="" action="")
+      .upload-area
+        .upload-area__layout
+          .upload-area__icon._image
+          .upload-area__title Выберите или перетащите сюда файлы
+
+          .upload-area__button Выбрать на компьютере
+            input(type="file")
+
+        .upload-area__footer
+          .upload-area-select 
+            .upload-area-select__title Папка загрузки по умолчанию:
+            .select
+              select()
+                option Папка 1
+
+          .upload-area__hint Вы можете одновременно выбрать до 10 файлов
+
+
+mixin modal-upload-result(data)
+  .modal._upload
+    .modal__title Загрузить файлы
+    .modal__close
+
+    form(method="" action="")
+      .upload-area._inline
+        .upload-area__layout
+          .upload-area__icon
+          .upload-area__title Выберите или перетащите сюда файлы
+
+          .upload-area__button Выбрать на компьютере
+            input(type="file")
+
+        .upload-area__footer
+          .upload-area-select 
+            .upload-area-select__title Папка загрузки по умолчанию:
+            .select
+              select()
+                option Папка 1
+
+        .upload-area-result
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 25%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 25%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 35%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 35%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 87%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 87%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 100%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 100%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+        .upload-area-control
+          a(href="#" title="").upload-area-control__clear Очистить все
+          a(href="#" title="").button._blue Продолжить
+
+mixin modal-upload-image-result(data)
+  .modal._upload
+    .modal__title Загрузить файлы
+    .modal__close
+
+    form(method="" action="")
+      .upload-area._inline
+        .upload-area__layout
+          .upload-area__icon._image
+          .upload-area__title Выберите или перетащите сюда файлы
+
+          .upload-area__button Выбрать на компьютере
+            input(type="file")
+
+        .upload-area__footer
+          .upload-area-select 
+            .upload-area-select__title Папка загрузки по умолчанию:
+            .select
+              select()
+                option Папка 1
+
+        .upload-area-result
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 25%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 25%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 35%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 35%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 87%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 87%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+          .upload-area-result-item
+            .upload-area-result-item__preview
+              img(src="https://via.placeholder.com/48")
+
+            .upload-area-result-item__content
+              .upload-area-result-item-progress
+                .upload-area-result-item-progress__title Airbnb_Cereal-Bold.woff2
+                .upload-area-result-item-progress__percent 100%
+
+                .upload-area-result-item-progress__bar
+                  span(style="width: 100%")
+
+            .upload-area-result-item__meta
+              .select
+                select
+                  option Папка 1
+
+              a(href="#" title="").iconed-button._more._single
+              button(type="submit").iconed-button._remove._single
+
+        .upload-area-control
+          a(href="#" title="").upload-area-control__clear Очистить все
+          a(href="#" title="").button._blue Продолжить

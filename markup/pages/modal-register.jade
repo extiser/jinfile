@@ -1,0 +1,28 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/top-baner/top-baner
+  include ../components/advantages/advantages
+  include ../components/offer/offer
+  include ../components/bottom-baner/bottom-baner
+  include ../components/modal/modal
+  include ../components/footer/footer
+
+  head
+      +head(head.defaults)
+  body
+    main.main
+      +header-main
+      +top-baner
+      +advantages
+      +offer
+      +bottom-baner
+      +footer
+
+      block modals
+        +modal-register
+        .mask
+      //- Main scripts. You can replace it, but I recommend you to leave it here
+      script(src='%=static=%js/main%=hash=%%=min=%.js')

@@ -1,0 +1,10 @@
+extend ./layout
+
+include ../components/images-control/images-control
+include ../components/images-resize/images-resize
+
+block content
+  - var data = {title: 'Изменить размер фото'};
+  +images-control(data)
+
+  +images-resize

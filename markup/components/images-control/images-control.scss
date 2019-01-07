@@ -1,0 +1,14 @@
+.images-control {
+  display: flex;
+
+  padding-top: 46px;
+  padding-bottom: 14px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    font-family: $Medium;
+    font-size: rem-calc(25);
+  }
+}

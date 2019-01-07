@@ -1,0 +1,28 @@
+mixin logined-user(data)
+  .logined-user
+    .logined-user-control
+      a(href="#" title="").logined-user-control__item._faq
+      +user-notifications
+      a(href="#" title="").logined-user-control__item._settings
+
+    .logined-user-info
+      .logined-user-info__avatar
+        img(src="%=static=%images/assets/logined-user/default.png" alt="")
+      .logined-user-info__email gerald.goodwin@hotmail.com
+
+      .logined-user-info-menu
+        a(href="#" title="").logined-user-info-menu__item Пункт меню
+        a(href="#" title="").logined-user-info-menu__item Пункт меню
+        a(href="#" title="").logined-user-info-menu__item Пункт меню
+        a(href="#" title="").logined-user-info-menu__item Пункт меню
+        a(href="#" title="").logined-user-info-menu__item Пункт меню
+
+mixin user-notifications(data)
+  .user-notifications
+    .user-notifications__icon
+    .user-notifications__list
+      .user-notifications-item
+        .user-notifications-item__title Внимание!
+        .user-notifications-item__msg У вас заканчиваеться свободное место
+        .user-notifications-item__action Получить больше пространства
+

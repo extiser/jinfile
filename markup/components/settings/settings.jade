@@ -1,0 +1,57 @@
+mixin settings(data)
+  .settings
+    .settings__title Настройки
+
+    .settings-control
+      a(href="#" title="").settings-control__item._active Аккаунт
+      a(href="#" title="").settings-control__item Связанные аккаунты
+      a(href="#" title="").settings-control__item Безопасность
+      a(href="#" title="").settings-control__item Crypto
+      a(href="#" title="").settings-control__item Оповещения
+      a(href="#" title="").settings-control__item История платежей
+
+    .account-settings
+      .account-settings__row
+        .account-settings__column
+          form(method="" action="")
+            .account-settings-field
+              .account-settings-field__label Ваше имя:
+              input(type="text" value="gerald").account-settings-field__input
+            
+            .account-settings-field
+              .account-settings-field__label Ваш емеил:
+              input(type="text" value="gerald.goodwin@hotmail.com").account-settings-field__input
+
+            .account-settings-field
+              .account-settings-field__label Ваш телефон:
+              input(type="text" value="+7 123 456 789").account-settings-field__input
+
+        .account-settings__column
+          form(method="" action="")
+            .account-settings-avatar
+              .account-settings-avatar__view
+                img(src="%=static=%images/assets/settings/default.jpg" alt="")
+
+              .account-settings-avatar__change
+                .account-settings-avatar__label Аватар
+
+                button(type="submit").button._blue._full Изменить фото
+
+                button(type="submit").button._blue._full Удалить фото
+
+      .account-settings__row
+        .account-settings__column
+          form(method="" action="")
+            .account-settings-field
+              .account-settings-field__label Ваше имя:
+              input(type="text" value="gerald").account-settings-field__input
+            
+            .account-settings-field
+              .account-settings-field__label Ваш емеил:
+              input(type="text" value="gerald.goodwin@hotmail.com").account-settings-field__input
+
+            .account-settings-field
+              .account-settings-field__label Ваш телефон:
+              input(type="text" value="+7 123 456 789").account-settings-field__input
+
+            button(type="submit").button._blue Изменить пароль

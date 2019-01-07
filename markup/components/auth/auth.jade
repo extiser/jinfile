@@ -1,0 +1,73 @@
+mixin auth-error(data)
+  .auth
+    .auth__left
+      .auth__title Авторизация
+      .auth__caption Хотите получить доступ к ограниченным возможностям облака? Пройдите регистрацию:
+
+      form(method="" action="").auth-form
+        .auth-form__error Ошибка! <span>Вернитесь назад и повторите ввод номера</span>
+
+        a(href="#" title="").auth-form__button Назад
+
+    .auth__right
+      img(src="%=static=%images/assets/auth/jin.jpg" alt="")
+
+mixin auth-service(data)
+  .auth
+    .auth__left
+      .auth__title Оформление услуги
+      .auth__caption Хотите получить доступ к ограниченным возможностям облака? Пройдите регистрацию:
+
+      form(method="" action="").auth-form
+        .auth-form__label Введите ваш номер телефона
+
+        input(type="text" value="").auth-form__input 
+
+        .auth-form__hint Стоимость 35 рублей в сутки
+
+        button(type="submit").auth-form__button Зарегистрироваться
+
+    .auth__right
+      img(src="%=static=%images/assets/auth/jin.jpg" alt="")
+
+mixin auth-code(data)
+  .auth
+    .auth__left
+      .auth__title Подтверждение
+      .auth__caption Хотите получить доступ к ограниченным возможностям облака? Пройдите регистрацию:
+
+      form(method="" action="").auth-form
+        .auth-form__label Для авторизации на сайте, введите полученный код из СМС сообщения
+
+        input(type="text" value="").auth-form__input 
+
+        .auth-form__hint Стоимость 35 рублей в сутки
+
+        button(type="submit").auth-form__button Продолжить
+
+      .auth__text Вводя код и нажимая кнопку "Продолжить", Вы подтверждаете создание подписки на безакцептную покупку на сайте «https://dokument2pdf.com». Для подтверждения введите код, полученный в SMS с номера 7764. Ваш номер телефона до 03.07.2019 12:52 будет связан с аккаунтом на сайте «https://dokument2pdf.com» и активацию доступа с ежедневной тарификацией 35 рублей для абонентов МТС, Билайн, МегаФон, Tele2. Отменить привязку платежного метода можно в Личном кабинете или отправив SMS сообщение с текстом СТОП на номер 7456.
+        .auth__links 
+          a(href="#" title="") Условия предоставления сервиса МТС
+          a(href="#" title="") Правила оказания услуг
+
+    .auth__right
+      img(src="%=static=%images/assets/auth/jin.jpg" alt="")
+
+mixin auth-cancel(data)
+  .auth
+    .auth__left
+      .auth__title Отмена премиум доступа
+      .auth__caption Хотите получить доступ к ограниченным возможностям облака? Пройдите регистрацию:
+
+      form(method="" action="").auth-form
+
+        .auth-form__caption Если Вы желаете прекратить действие премиум доступа для своего аккаунта, введите номер своего телефона и нажмите "Отказаться" 
+
+        .auth-form__label Введите ваш номер телефона
+
+        input(type="text" value="").auth-form__input 
+
+        button(type="submit").auth-form__button Отказаться
+
+    .auth__right
+      img(src="%=static=%images/assets/auth/jin.jpg" alt="")

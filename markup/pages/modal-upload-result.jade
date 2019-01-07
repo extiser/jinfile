@@ -1,0 +1,14 @@
+extend ./layout
+
+include ../components/files-control/files-control
+include ../components/files-table/files-table
+include ../components/modal/modal
+
+block content
+  +files-control
+
+  +files-table
+
+block modals
+  +modal-upload-result
+  .mask

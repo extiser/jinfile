@@ -1,0 +1,102 @@
+.advantages {
+  padding: 68px 0 108px;
+
+  border-bottom: 2px solid #f6f7fb;
+  @media screen and (max-width: 960px) {
+    padding: 30px 10px 20px 10px;
+  }
+  &._about {
+    padding: 40px 0;
+
+    border-bottom: 0;
+    .advantages-item {
+      padding-left: 0;
+
+      &:before {
+        position: relative;
+
+        display: block;
+
+        margin: 0 auto 30px;
+      }
+      &__title {
+        font-size: rem-calc(16);
+
+        text-align: center;
+
+        color: $gray;
+      }
+    }
+  }
+  &__title {
+    font-family: $Light;
+    font-size: rem-calc(21);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $violet;
+  }
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__list {
+    display: flex;
+
+    padding-top: 50px;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    @media screen and (max-width: 960px) {
+      display: block;
+    }
+  }
+}
+
+.advantages-item {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 30%;
+  padding-left: 100px;
+  @media screen and (max-width: 960px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+  }
+  &._devices {
+    &:before {
+      @include bg($devices);
+    }
+  }
+  &._share {
+    &:before {
+      @include bg($share);
+    }
+  }
+  &._secure {
+    &:before {
+      @include bg($secure);
+    }
+  }
+  &__title {
+    font-family: $Medium;
+    font-size: rem-calc(25);
+    line-height: rem-calc(29);
+
+    margin-bottom: 25px;
+
+    color: $gray;
+  }
+  &__text {
+    font-size: rem-calc(16);
+
+    color: $gray;
+  }
+}

@@ -1,0 +1,37 @@
+mixin files-table(data)
+  .files-table
+    .files-table-header
+      .files-table-header__column._checkbox
+        input(type="checkbox" value="all").checkbox
+      
+      .files-table-header__column._name
+        span Имя
+
+      .files-table-header__column._size
+        span Размер
+
+      .files-table-header__column._date
+        span Дата
+
+      .files-table-header__column._meta
+        .files-view-switch
+          a(href="#" title="").files-view-switch__item._tile
+          a(href="#" title="").files-view-switch__item._list._active
+
+    .files-table-body
+      - for (var i = 0; i < 6; i++)
+        .files-table-body__row
+          .files-table-body__column._check
+            input(type="checkbox" value="1").checkbox
+
+          .files-table-body__column._name
+            img(src="https://via.placeholder.com/24")
+            span Викинги / Vikings / Сезон: 5 / Серии: 1-10 из 20 (Йохан Ренк)
+
+          .files-table-body__column._size 65.5 Mb
+
+          .files-table-body__column._date 15.05.2018
+
+          .files-table-body__column._meta
+            a(href="#" title="").iconed-button._download Скачать
+            a(href="#" title="").iconed-button._more._single

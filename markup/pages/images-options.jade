@@ -1,0 +1,10 @@
+extend ./layout
+
+include ../components/images-control/images-control
+include ../components/images-options/images-options
+
+block content
+  - var data = {title: 'Обработка фото'};
+  +images-control(data)
+
+  +images-options
